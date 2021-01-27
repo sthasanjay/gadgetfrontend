@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://f-onts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "PT Sans", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* all css */
+@import "./css/nav.css";
+@import "./css/home.css";
+/* common css */
+:root {
+  --brown-color: #964c35;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --blue-color: #2dbbf0;
+}
+
+.flex-css {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-css-row {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex-css-column {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-row-wrap {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-justify-center {
+  display: flex !important;
+  justify-content: center;
+}

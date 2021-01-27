@@ -1,0 +1,91 @@
+.nav-container {
+  padding: 1.5rem !important;
+  background: var(--brown-color);
+}
+
+.nav-container .navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Caesar Dressing", cursive;
+  color: var(--white-color);
+  letter-spacing: 0.1em;
+}
+
+.nav-container .navbar-nav {
+  margin-left: 100px !important;
+}
+
+.nav-container .navbar-nav .main-link {
+  position: relative;
+  font-size: 1.1rem;
+  padding: 0.5rem 0 !important;
+  color: var(--white-color) !important;
+  text-transform: none;
+  margin: 0 30px !important;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.nav-container .navbar-nav .main-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: none;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.nav-container .navbar-nav .main-link:hover::before {
+  animation: border-in 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.nav-container .navbar-nav .main-link:not(hover)::before {
+  animation: border-out 1s ease;
+  animation-fill-mode: backwards;
+}
+
+@keyframes border-in {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes border-out {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+    border-bottom-color: var(--brown-color);
+  }
+}
+
+.nav-container .navbar-toggle {
+  outline: none;
+}
+.nav-container .navbar-toggle-icon {
+  background-color: #803b26;
+  padding: 1.2rem !important;
+}
+
+.nav-container .navbar-toggler-icon {
+  background-color: #803b26;
+  padding: 1.2rem !important;
+}
+.nav-container .navbar-nav .after-link {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.5rem 0 !important;
+  color: var(--white-color) !important;
+  text-transform: uppercase;
+  margin: 0 10px !important;
+}
+
+.nav-container .navbar-nav .after-link svg {
+  font-size: 2rem;
+}

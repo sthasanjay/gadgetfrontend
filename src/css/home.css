@@ -1,0 +1,267 @@
+/* home back */
+.home-banner {
+  background: url(../images/static/homeBack/homeBackground.png);
+  background-color: var(--brown-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.home-banner .heading {
+  margin-top: -15rem !important;
+}
+
+.home-banner .heading span {
+  font-size: 3rem;
+  font-family: "Caesar Dressing", cursive;
+  color: var(--white-color);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.home-banner .heading p {
+  font-size: 4rem;
+  color: var(--white-color);
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.home-banner .heading button {
+  padding: 0.5rem 2rem !important;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: #803b26;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  font-family: "PT Sans", sans-serif;
+  font-size: 2rem;
+}
+
+/* .home front */
+.home-front {
+  margin-top: -20rem !important;
+}
+
+.home-front .front-img-container {
+  position: relative;
+}
+
+.home-front .front-img {
+  border: 7px solid var(--black-color);
+  border-radius: 20px;
+  /* object-fit: cover; */
+}
+
+.home-front .three-gadgets {
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 33rem);
+}
+
+.home-front .item {
+  width: 40%;
+  padding: 2rem 4rem 1rem 4rem !important;
+  margin: 0 2rem !important;
+  text-align: center;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.07);
+  background-color: var(--white-color);
+  border-radius: 6px;
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.home-front .item:hover {
+  transform: scale(1);
+}
+
+.home-front .item img {
+  height: 10rem;
+  object-fit: cover;
+}
+
+.home-front .item span {
+  font-size: 1.5rem;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+}
+
+/* text banner */
+.text-banner h1,
+.trending-heading h1 {
+  position: relative;
+  padding-bottom: 3rem !important;
+  margin-bottom: 3rem !important;
+  font-size: 3rem;
+}
+
+.text-banner h1::before,
+.trending-heading h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid var(--blue-color);
+  width: 80px;
+}
+
+.text-banner p {
+  font-size: 1.5rem;
+  max-width: 1230px;
+  color: var(--black-color);
+  text-align: justify;
+  padding: 0 2rem !important;
+}
+
+/* trending container */
+.trending-heading h1 {
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.trending-heading h1::before {
+  border-bottom-color: #dadada;
+}
+
+.trending-heading p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #979797;
+  font-weight: 700;
+}
+
+.trending-card {
+  position: relative;
+  background-color: #fafafa;
+  width: 330px;
+  height: 348px;
+  margin: 2rem 2.5rem !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.trending-card img {
+  height: 250px;
+  padding: 2rem !important;
+}
+
+.trending-card .product-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.6rem;
+  padding: 2rem 2rem !important;
+  font-family: "Open Sans", sans-serif;
+  color: var(--black-color);
+}
+
+.trending-card .price-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #979797;
+  font-size: 1.6rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 1rem 2rem !important;
+}
+
+.trending-card .trending-btns {
+  position: absolute;
+  bottom: 15%;
+  left: -15%;
+  transition: all 0.5s ease, opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.trending-card .trending-btns .btn {
+  background-color: var(--white-color);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+  padding: 1rem !important;
+  margin: 0.5rem 0 !important;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.trending-card .trending-btns .btn .icon {
+  font-size: 1.7rem !important;
+}
+
+.trending-card:hover .trending-btns {
+  opacity: 1;
+  left: 5%;
+}
+
+.trending-card .trending-btns .btn:hover {
+  background-color: #252627;
+  color: #ffffff;
+}
+
+.trending-container .show-all-btn {
+  position: relative;
+  padding: 1.1rem 4rem !important;
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 1.5rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  border-radius: 3px;
+  border: 2px solid var(--black-color);
+
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.trending-container .show-all-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 3;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(225, 225, 225, 0) 0%,
+    rgba(225, 225, 225, 0.3) 100%
+  );
+  transform: skewX(-45deg);
+  transition: all 1s ease;
+}
+
+.trending-container .show-all-btn:hover {
+  color: var(--white-color);
+  background-color: #252627;
+}
+
+.trending-container .show-all-btn:hover::before {
+  left: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .home-front .front-img {
+    width: 400px;
+  }
+  .home-front .item {
+    width: 25%;
+    padding: 1rem 2rem 0.5rem 2rem !important;
+  }
+
+  .home-front .item img {
+    height: 5rem;
+  }
+
+  .home-front .three-gadgets {
+    left: calc(50% - 20rem);
+  }
+
+  .home-front .item span {
+    font-size: 1.2rem;
+  }
+}
