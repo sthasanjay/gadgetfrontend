@@ -57,27 +57,26 @@
   position: relative;
   margin-top: 0.5rem !important;
   font-size: 1rem;
-  background-color: rgb(177, 7, 7);
+  background-color: red;
   display: inline-block;
   color: var(--white-color) !important;
   padding: 3px 7px !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Popins", sans-serif;
   letter-spacing: 0.07em;
   animation: fade 0.1s ease-in-out;
 }
 
 .form-box .error-text-top::after {
+  position: absolute;
   content: "!";
   color: red;
   font-size: 2rem;
   font-weight: 600;
-  position: absolute;
   top: -3px;
   left: -12px;
 }
-
 .form-box .error-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "Popins", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   padding: 0 1rem !important;
@@ -93,5 +92,4 @@
     opacity: 1;
   }
 }
-
 /* .form-box; */

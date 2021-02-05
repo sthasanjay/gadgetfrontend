@@ -24,7 +24,7 @@ const Footer = () => {
               <Col md={4} className="copyright-heading flex-css-column">
                 <p>&copy; 2021 All rights reserved</p>
                 <span>
-                  Developed by <a href="">SP7</a> & <a href="">SS21</a>
+                  Developed by  <a href="">SS21</a>
                   <img src={flag} alt="flag" />
                 </span>
               </Col>

@@ -1,15 +1,20 @@
-import React from 'react'
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbox from './components/Navbox';
-import Routing from './components/Routing';
 import "./App.css";
-const App = () => {
+import Navbox from "./components/Navbox";
+// import AfterNav from "./components/AfterNav";
+import Routing from "./components/Routing";
+import { useSelector } from "react-redux";
+import AfterNav from "./components/AfterNav";
+
+function App() {
+  const loggedInStatus = useSelector((state) => state.status);
   return (
     <>
-     <Navbox/>
-     <Routing/>
+      {loggedInStatus ? <AfterNav /> : <Navbox />}
+      <Routing />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
